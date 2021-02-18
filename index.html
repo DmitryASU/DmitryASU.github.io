@@ -9,25 +9,38 @@
     </head>
 
     <body>
+	
 			<div>
 				<img src="imeges/Plan of the house.png" height="730">
 			</div>
 			<form>
 				<div>
-					<button id="button_temp"><img src="imeges/Temp.png" height="30" style="vertical-align: middle"><b>Включить автоматическое регулирование температуры</b> 
-						</button>
-					<button id="button_plus"><img src="imeges/plus.png" height="30">
-						</button> 
-					<button id="button_minus"><img src="imeges/minus.png" height="35" width="30" style="vertical-align: middle">
-						</button>
-					<samp id="ind_temp">26 </samp>
-				</div> 
-				<div>
-					<button id="water_sensor"><img src="imeges/Water_sensor.png" height="30" width="30" style="vertical-align: middle"> <b>Отключение датчиков протечки воды</b>
-						</button>
-				</div>
+					<button id="button_temp" type="button"><img src="imeges/Temp.png" height="30" style="vertical-align: middle"><b>Включить автоматическое регулирование температуры</b> </button>
+					<span>	
+							<button id="button_plus" type="button" onclick="indicator(1)"> <img src="imeges/plus.png" height="30"></button> 
+							<button id="button_minus" type="button" onclick="indicator(-1)"><img src="imeges/minus.png" height="35" width="30" style="vertical-align: middle"></button>
+							<span id="ind_temp"> 25 </span>	
+					</span>	
+						
 					
-			
+					
+				 
+						<nav class="water_sensor">
+							<li class="water_sensors_menu"><img src="imeges/Water_sensor.png" height="30" width="30" style="vertical-align: middle"><b id="off" style="vertical-align: middle">Отключение датчиков протечки воды</b>
+					  
+								<ul class="drop_down_list">
+									<li><button id="one">1 час</button></li>
+									<li><button id="two">2 часа</button></li>
+									<li><button id="three">3 часа</button></li>
+									<li><button id="four">4 часа</button></li>
+								</ul>		  
+					  
+							</li>
+						</nav>
+						<p class="timer">0000</p>
+						
+				</div>	
+				
 			</form>
 			
    		
@@ -35,6 +48,8 @@
     </body>
  	
 	<footer>
+							
+	
 	   <address>
 	    <a href="https://e.mail.ru"> Написаить письмо </a><br/>
 		Телефон: 8 922 401 01 94
