@@ -6,15 +6,29 @@ body{ background: url(imeges/Fon.png) center repeat scroll;
 }
 #button_minus{ position: absolute; left: 850px; top: 58px; border: 1.5px black solid; 
 }
-#ind_temp{ position: absolute; left: 900px; top: 18px; border: 1.5px black solid; font-size: 507%; background-color: #DDDDDD;
+#ind_temp{ position: absolute; left: 900px; top: 18px; border: 1.5px black solid; font-size: 407%; background-color: #DDDDDD; 
 }
-#water_sensor{ position: absolute; left: 850px; top:  185px; border: 1.5px black solid; font-size: 18px;
-               background-color: #DDDDDD; font-family: sans-serif;
+#off{font-size: 18px;
 }
+#one {font-size: 18px; min-width: 50ppx; position: absolute; left: 165px; top: 107px; border: 1.5px black solid;}
+#two {font-size: 18px; min-width: 100px; position: absolute; left: 143px; top: 83px; border: 1.5px black solid; }
+#three {font-size: 18px; min-width: 200px; position: absolute; left: 93px; top: 57px; border: 1.5px black solid;}
+#four {font-size: 18px; min-width: 300px; position: absolute;  left: 42px; top: 31px; border: 1.5px black solid;}
 
 
 #button_plus:hover {background-color: #FE4A4A;} 
 #button_minus:hover {background-color: #8F54BA;}
 #button_temp:hover {background-color: #00FF00;}
-#water_sensor:hover {background-color: #00FF00;}
+#one:hover {background-color: #F7BF02;}
+#two:hover {background-color: #F7A100;}
+#three:hover {background-color: #F76201;}
+#four:hover {background-color: #E84101;}
 
+.water_sensors_menu:hover {background-color: #00FF00;}
+.water_sensor { margin: 0; padding: 0;}
+.water_sensors_menu {position: absolute; width: auto; min-width:384px; background-color: #DDDDDD;   list-style: none; border: 1.8px black solid; top: 180px; left: 850px;}
+.drop_down_list { margin: 0; padding: 0; list-style: none; width: auto; font-size: 18px;   }
+.water_sensor li ul{display: none;}
+li:hover ul  { display: block; width: auto; }
+
+.timer {position: absolute; top: 180px; left: 1300px; min-width:120px border: 1.8px black solid; background-color: #DDDDDD; }
